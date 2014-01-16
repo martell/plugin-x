@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		014AD63317B82504007E0C2E /* IAPAppStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 014AD63217B82504007E0C2E /* IAPAppStore.m */; };
-		014AD63417B8251A007E0C2E /* IAPAppStore.h in Sources */ = {isa = PBXBuildFile; fileRef = 014AD63117B82504007E0C2E /* IAPAppStore.h */; };
 		FACAD88C1762C1B500D75ADE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAD88B1762C1B500D75ADE /* Foundation.framework */; };
 		FACAD8C41762C64100D75ADE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FACAD8C31762C64100D75ADE /* UIKit.framework */; };
+		FFBFC8801886EBFA00C2A933 /* IAPHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC8761886EBD500C2A933 /* IAPHelper.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FFBFC8821886EBFA00C2A933 /* IAPShare.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC8781886EBD500C2A933 /* IAPShare.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		FFBFC8841886EBFA00C2A933 /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC87A1886EBD500C2A933 /* NSString+Base64.m */; };
+		FFBFC8861886EBFA00C2A933 /* SFHFKeychainUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC87C1886EBD500C2A933 /* SFHFKeychainUtils.m */; };
+		FFBFC8881886EBFA00C2A933 /* CCStoreKitHelper.mm in Sources */ = {isa = PBXBuildFile; fileRef = FFBFC87E1886EBD500C2A933 /* CCStoreKitHelper.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +36,16 @@
 		FACAD8881762C1B500D75ADE /* libPluginAppStore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPluginAppStore.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FACAD88B1762C1B500D75ADE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FACAD8C31762C64100D75ADE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		FFBFC8751886EBD500C2A933 /* IAPHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPHelper.h; sourceTree = "<group>"; };
+		FFBFC8761886EBD500C2A933 /* IAPHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPHelper.m; sourceTree = "<group>"; };
+		FFBFC8771886EBD500C2A933 /* IAPShare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IAPShare.h; sourceTree = "<group>"; };
+		FFBFC8781886EBD500C2A933 /* IAPShare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IAPShare.m; sourceTree = "<group>"; };
+		FFBFC8791886EBD500C2A933 /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		FFBFC87A1886EBD500C2A933 /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		FFBFC87B1886EBD500C2A933 /* SFHFKeychainUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SFHFKeychainUtils.h; sourceTree = "<group>"; };
+		FFBFC87C1886EBD500C2A933 /* SFHFKeychainUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SFHFKeychainUtils.m; sourceTree = "<group>"; };
+		FFBFC87D1886EBD500C2A933 /* CCStoreKitHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCStoreKitHelper.h; sourceTree = "<group>"; };
+		FFBFC87E1886EBD500C2A933 /* CCStoreKitHelper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CCStoreKitHelper.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +64,16 @@
 		FACAD87D1762C1B500D75ADE = {
 			isa = PBXGroup;
 			children = (
+				FFBFC8751886EBD500C2A933 /* IAPHelper.h */,
+				FFBFC8761886EBD500C2A933 /* IAPHelper.m */,
+				FFBFC8771886EBD500C2A933 /* IAPShare.h */,
+				FFBFC8781886EBD500C2A933 /* IAPShare.m */,
+				FFBFC8791886EBD500C2A933 /* NSString+Base64.h */,
+				FFBFC87A1886EBD500C2A933 /* NSString+Base64.m */,
+				FFBFC87B1886EBD500C2A933 /* SFHFKeychainUtils.h */,
+				FFBFC87C1886EBD500C2A933 /* SFHFKeychainUtils.m */,
+				FFBFC87D1886EBD500C2A933 /* CCStoreKitHelper.h */,
+				FFBFC87E1886EBD500C2A933 /* CCStoreKitHelper.mm */,
 				014AD63117B82504007E0C2E /* IAPAppStore.h */,
 				014AD63217B82504007E0C2E /* IAPAppStore.m */,
 				0137615217876EED00D7FCC9 /* PluginAppStore-Prefix.pch */,
@@ -126,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				014AD63417B8251A007E0C2E /* IAPAppStore.h in Sources */,
+				FFBFC8801886EBFA00C2A933 /* IAPHelper.m in Sources */,
+				FFBFC8821886EBFA00C2A933 /* IAPShare.m in Sources */,
+				FFBFC8841886EBFA00C2A933 /* NSString+Base64.m in Sources */,
+				FFBFC8861886EBFA00C2A933 /* SFHFKeychainUtils.m in Sources */,
+				FFBFC8881886EBFA00C2A933 /* CCStoreKitHelper.mm in Sources */,
 				014AD63317B82504007E0C2E /* IAPAppStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +221,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PluginAppStore-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../protocols/platform/ios";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../protocols/proj.ios/build/Release-iphoneos\"",
@@ -212,6 +241,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PluginAppStore-Prefix.pch";
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../../protocols/platform/ios";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/../../../protocols/proj.ios/build/Release-iphoneos\"",

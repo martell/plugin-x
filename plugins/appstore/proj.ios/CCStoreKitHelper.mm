@@ -3,7 +3,7 @@
 //
 
 #import "CCStoreKitHelper.h"
-#include "CCInAppBilling.h"
+#import "IAPWrapper.h"
 
 #define IS_MIN_IOS6 ([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0f)
 
@@ -90,7 +90,8 @@
     }
     if(!found) {
         NSLog(@"Product not found");
-        cocos2d::InAppBilling::getInstance()->onPurchaseFailed();
+        //[IAPWrapper onPayResult:self withRet: withMsg:NULL];
+        //cocos2d::InAppBilling::getInstance()->onPurchaseFailed();
     }
     return;
 }
@@ -135,6 +136,8 @@
  
     SKPayment * payment = [SKPayment paymentWithProduct:product];
     [[SKPaymentQueue defaultQueue] addPayment:payment];
+    
+    [IAPWrapper onPayResult:self withRet:kPaySuccess withMsg:NULL];
  
 }
 

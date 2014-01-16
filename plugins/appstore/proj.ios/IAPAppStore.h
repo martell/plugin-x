@@ -31,7 +31,7 @@
 
 @property BOOL debug;
 @property (copy, nonatomic) NSMutableDictionary* mIAPInfo;
-
+@property (copy, nonatomic) NSMutableDictionary* mDEVInfo;
 /**
  * @brief interfaces of protocol : InterfaceIAP
  */

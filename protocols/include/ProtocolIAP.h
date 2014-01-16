@@ -80,6 +80,10 @@ public:
     */
     void setResultListener(PayResultListener* pListener);
 
+    inline PayResultListener* getResultListener()
+    {
+        return _listener;
+    }
     /**
     @brief pay result callback
     */
