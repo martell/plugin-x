@@ -12,6 +12,7 @@ Developers:
     martell
         Reimport of Android IAP for better v3 Support
         Bind Android IAP to Cocos2dActivity.java for handling successful purchase
+        Added an IOS In App Purchase Wrapper
 
     please add more here :)
 
